@@ -1,8 +1,15 @@
  /******************
 	Obradoiro 2023 
 ********************/
- /* LOGO */
+ html {
+ 	scroll-behavior: smooth;
+ }
 
+ #arriba {
+ 	transform: rotate(90deg);
+ }
+
+ /* LOGO */
  .site-logo-2 > img {
  	float: left;
  	width: 8em;
