@@ -17,12 +17,56 @@
  	filter: grayscale(50%);
  }
 
+ /* Concello ACTIVO */
+
+ h1.concello-activo-rois,
+ h1.concello-activo-padron,
+ h1.concello-activo-dodro {
+ 	display: inline;
+ 	width: 25%;
+ 	height: auto;
+ }
+
+ .concello-activo-rois a,
+ .concello-activo-padron a,
+ .concello-activo-dodro a {
+ 	text-decoration: none;
+
+ 	padding: 0px;
+ 	margin: 0px;
+
+ }
+
+
+ h1.concello-activo-rois a:hover,
+ h1.concello-activo-padron a:hover,
+ h1.concello-activo-dodro a:hover {
+ 	color: #fff;
+ 	-moz-box-shadow: 4px 4px 8px #666;
+ 	/* Firefox 3.5 - 3.6 */
+ 	-webkit-box-shadow: 4px 4px 8px #666;
+ 	/* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+ 	box-shadow: 4px 4px 8px #666;
+ 	/* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+ }
+
+ h1.concello-activo-rois a > img,
+ h1.concello-activo-padron a > img,
+ h1.concello-activo-dodro a > img {
+ 	width: 50% !important;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+
+
  /* tamaños */
  .small {
  	font-size: .8em;
  }
 
  /* data-title */
+
  *[data-title] {
  	position: relative;
  }
@@ -40,13 +84,12 @@
 
  *[data-title]:after {
  	content: attr(data-title);
- 	background: #7C858E66;
- 	color: #e28743;
- 	font-weight: 700;
+ 	background: #7C858E;
+ 	color: #fff;
+ 	font-weight: 500;
  	font-size: 1em;
  	/* 	white-space: nowrap;*/
  	box-shadow: 1px 1px 3px #ccc;
- 	opacity: 1;
  	border: 1px solid #ccc;
  	z-index: 99999;
  	visibility: hidden;
@@ -54,7 +97,41 @@
  	position: absolute;
  	top: 0;
  	right: 1%;
- 	padding: inherit;
+ 	padding: .1em;
+ 	text-align: center;
+ 	/*	text-transform: lowercase;*/
+ }
+
+ /* data-title para logo */
+
+ .site-logo-2[data-title]:after {
+ 	text-transform: none;
+ 	font-size: .7em;
+ }
+
+ .site-logo-2[data-title]:hover:after {
+ 	opacity: 1;
+ 	transition: all 0.1s ease 0.5s;
+ 	visibility: visible;
+ }
+
+ .site-logo-2[data-title]:after {
+ 	content: attr(data-title);
+ 	background: #7C858E;
+ 	color: #fff;
+ 	font-weight: 500;
+ 	font-size: .7em;
+ 	/* 	white-space: nowrap;*/
+ 	box-shadow: 1px 1px 3px #ccc;
+ 	border: 1px solid #ccc;
+ 	z-index: 99999;
+ 	visibility: hidden;
+ 	border-radius: 6px;
+ 	position: relative;
+ 	top: auto;
+ 	right: 10%;
+ 	padding: .1em;
+ 	text-align: center;
  	/*	text-transform: lowercase;*/
  }
 
@@ -174,3 +251,29 @@
 
  /* fin FOOTER index */
  /* footer sitio */
+
+
+ /* MAPAS */
+
+ #map {
+ 	width: 100%;
+ 	height: 75vh;
+
+ }
+
+ /******** estilo  mapas *********/
+
+ .custom .leaflet-bindPopup,
+ .custom .leaflet-popup-content-wrapper {
+ 	background: #F9F9F9;
+ 	color: #000;
+ 	box-shadow: 0px 2px 5px 2px #3f5862;
+ }
+
+
+ /*
+#map .iconas {
+	border: 1px solid blue;
+	box-shadow: 0px 2px 5px 2px #3f5862;
+}
+*/
