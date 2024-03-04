@@ -14,7 +14,8 @@ var scrolltotop = {
 		scrollduration: 1000,
 		fadeduration: [500, 100]
 	},
-	controlHTML: '<img src="assets/corporate/img/up.png" style="width:35px; height:35px" />', //HTML for control, which is auto wrapped in DIV w/ ID="topcontrol"
+	controlHTML: '<img src="assets/corporate/img/up.png" alt="ir arriba" id="arriba">', //HTML for control, which is auto wrapped in DIV w/ ID="topcontrol"
+
 	controlattrs: {
 		offsetx: 30,
 		offsety: 30

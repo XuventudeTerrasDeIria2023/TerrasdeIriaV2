@@ -26,44 +26,92 @@
 
  /* Concello ACTIVO */
 
- h1.concello-activo-rois,
- h1.concello-activo-padron,
- h1.concello-activo-dodro {
- 	display: inline;
- 	width: 25%;
- 	height: auto;
+
+ /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');*/
+
+ .img-inside {
+ 	position: absolute;
+ 	top: 0%;
+ 	left: 20%;
+ 	/* 	transform: translate(-50%, -50%);*/
+ 	text-transform: uppercase;
+ 	font-size: 6rem;
+ 	font-family: 'Arial Black';
+ 	letter-spacing: 10px;
+ 	font-size: 10rem;
+ 	background: url("../../../imaxes/concello_dodro/RUTA_BRANHAS_2.jpg");
+ 	background-size: contain;
+ 	background-clip: text;
+ 	color: transparent;
+ 	text-fill-color: transparent;
+ 	-webkit-text-fill-color: transparent;
+ 	-webkit-background-clip: text;
+ 	background-clip: text;
+ 	margin: 0 auto;
+
  }
+
+ /*
+ .img-inside {
+	background-image: url("../../../imaxes/concello_dodro/RUTA_BRANHAS_2.jpg");
+	background-size: cover;
+	background-position: top;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-family: 'Arial Black';
+	letter-spacing: 10px;
+	font-size: 7rem
+}
+*/
+
+ /*
+ .concello-activo-dodro a > h1 {
+ 	font-size: 200px;
+ 	color: black;
+	 font-weight: 800;
+ 	-webkit-text-fill-color: transparent;
+ 	-webkit-background-clip: text;
+ 	background-image: url("imaxes/concello_dodro/RUTA_BRANHAS_2.jpg");
+ 	background-size: cover;
+ }
+*/
+ /*
 
  .concello-activo-rois a,
  .concello-activo-padron a,
  .concello-activo-dodro a {
  	text-decoration: none;
-
  	padding: 0px;
  	margin: 0px;
-
  }
+*/
 
-
- h1.concello-activo-rois a:hover,
- h1.concello-activo-padron a:hover,
- h1.concello-activo-dodro a:hover {
+ /*
+ .concello-activo-rois a:hover,
+ .concello-activo-padron a:hover,
+ .concello-activo-dodro a:hover {
  	color: #fff;
  	-moz-box-shadow: 4px 4px 8px #666;
- 	/* Firefox 3.5 - 3.6 */
- 	-webkit-box-shadow: 4px 4px 8px #666;
- 	/* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
- 	box-shadow: 4px 4px 8px #666;
- 	/* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+*/
+ /* Firefox 3.5 - 3.6 */
+ /* 	-webkit-box-shadow: 4px 4px 8px #666;*/
+ /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+ /* 	box-shadow: 4px 4px 8px #666;*/
+ /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
  }
 
- h1.concello-activo-rois a > img,
- h1.concello-activo-padron a > img,
- h1.concello-activo-dodro a > img {
- 	width: 50% !important;
- 	margin: 0;
- 	padding: 0;
- }
+
+ /*
+.concello-activo-rois img,
+.concello-activo-padron img,
+.concello-activo-dodro img {
+	width: 50% !important;
+	margin: 0;
+	padding: 0;
+}*/
+
+
+
 
 
 
