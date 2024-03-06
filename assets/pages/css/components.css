@@ -384,6 +384,10 @@ Social Icons
 	background-position: 0 -38px;
 }
 
+.social-icons li .web {
+	background: url(../../pages/img/social/web.png) no-repeat;
+}
+
 .social-icons li .amazon {
 	background: url(../../pages/img/social/amazon.png) no-repeat;
 }
