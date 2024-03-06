@@ -267,7 +267,7 @@
 
  footer.footer-light .copyright {
  	width: 100%;
- 	margin: auto;
+ 	margin: 0 auto;
  	color: #3f5862;
  	font-size: 1em;
  	padding: .5em;
@@ -277,13 +277,11 @@
  	align-items: flex-end;
  	flex-wrap: wrap;
  	border-bottom: 1px solid rgba(91, 91, 91, 0.2);
-
-
  }
 
  footer.footer-light img {
- 	width: 30%;
- 	margin: 0px;
+ 	width: 25%;
+ 	margin: .2em;
  	padding: 0px;
  }
 
@@ -303,6 +301,22 @@
  	box-shadow: 0px 2px 5px 2px #3f5862;
  }
 
+
+ footer.footer-light .copyright > .social-icons {
+ 	margin: 0px;
+ 	padding: .5em;
+ 	display: block;
+ 	justify-content: center;
+ 	align-items: center;
+ 	text-align: center;
+ 	border-right: 1px solid #ccc;
+ }
+
+ footer.footer-light .copyright > .social-icons p {
+ 	color: #e28743;
+ 	font-weight: 700;
+
+ }
 
  /* fin FOOTER index */
  /* footer sitio */
@@ -326,9 +340,21 @@
  }
 
 
- /*
-#map .iconas {
-	border: 1px solid blue;
-	box-shadow: 0px 2px 5px 2px #3f5862;
-}
-*/
+ /******** contenedor galeria *********/
+
+ .galeria-container {
+ 	width: 90%;
+ 	height: auto;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-content: flex-start;
+ 	align-items: center;
+ 	flex-wrap: wrap;
+ 	margin: 0 auto;
+ 	text-align: center;
+ }
+
+ .galeria-container div {
+ 	width: 22%;
+ 	height: auto;
+ }
