@@ -706,14 +706,11 @@ body.page-header-fixed {
 	color: #fff;
 }
 
-.dropdown-submenu > a:after {
-	display: none;
-}
 
 /* navigation content */
 .header-navigation-content {
 	padding: 20px 30px;
-	min-width: 600px;
+	min-width: 30em;
 }
 
 .header-navigation-content .header-navigation-col {
@@ -722,9 +719,10 @@ body.page-header-fixed {
 
 .header-navigation-content h4,
 .ecommerce .header-navigation-content h4 {
-	font: bold 1em 'Open Sans', Arial, sans-serif;
+	font: 600 .9em 'Open Sans', Arial, sans-serif;
+	color: #3f5862;
 	margin: 0 0 6px;
-	padding: 10px 10px 5px;
+	padding: .2em;
 	border-bottom: solid 1px #f0f0f0;
 }
 
