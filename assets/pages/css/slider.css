@@ -105,13 +105,14 @@
 
 .carousel-slider .carousel-item-nine {
 	background: url(../../../assets/pages/img/frontend-slider/bg1.jpg);
-	background-size: cover;
+	background-size: auto;
 	background-position: center center;
 }
 
 .carousel-slider .carousel-item-ten {
 	background: url(../../../assets/pages/img/frontend-slider/bg2.jpg);
-	background-size: cover;
+	background-size: auto;
+	background-repeat: no-repeat;
 	background-position: center center;
 }
 

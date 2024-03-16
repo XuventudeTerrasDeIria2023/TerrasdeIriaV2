@@ -26,7 +26,7 @@
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	z-index: 90;
-	background: #000;
+	background: #000000;
 	opacity: 0;
 	filter: alpha(opacity=0);
 
@@ -49,7 +49,7 @@
 	-o-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
-	opacity: 0.4;
+	opacity: 0.5;
 	filter: alpha(opacity=50);
 }
 
