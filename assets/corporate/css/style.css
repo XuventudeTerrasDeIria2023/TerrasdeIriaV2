@@ -213,17 +213,19 @@ Misc tools
 	margin-right: 10px !important;
 }
 
-/*.btn {
-	padding: 7px 14px;  
+.btn {
+	padding: 7px 14px;
 	font-size: 14px;
 	text-transform: uppercase;
 	border-radius: 0;
 }
+
 .btn-primary {
 	border: none;
 	background: #e94d1c;
 	color: #fff;
 }
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
@@ -231,25 +233,44 @@ Misc tools
 	background: #e28743;
 	border: none;
 }
-.content-page .btn-primary, 
+
+.content-page .btn-primary,
 .content-page .btn-primary:hover {
 	color: #fff;
 	margin-left: 0 !important;
 }
+
+.content-page .carousel-btn-red {
+	display: inline-block;
+	font-size: 1em;
+	font-weight: 700;
+	color: #fff;
+	background: #e28743;
+	padding: .5em;
+}
+
+.content-page .carousel-btn-red:hover {
+	text-decoration: none;
+	background: #3f5862;
+	color: #fff;
+	box-shadow: 0px 2px 5px 2px #3f5862;
+}
+
 .btn-default {
 	border: 1px solid #EDEDED;
 	color: #A8AEB3;
 	background: transparent;
-	padding: 6px 13px; 
+	padding: 6px 13px;
 }
+
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active {
 	border: 1px solid #A8AEB3;
 	color: #fff;
 	background: #A8AEB3;
-	padding: 6px 13px; 
-}*/
+	padding: 6px 13px;
+}
 
 div.checker,
 div.radio {
@@ -1414,8 +1435,13 @@ steps block and steps block elements
 	padding-top: 10px;
 }
 
+.content-page h2 {
+	font-size: 2em;
+	margin-bottom: 7px;
+}
+
 .content-page h3 {
-	font-size: 20px;
+	font-size: 1.5em;
 	margin-bottom: 7px;
 }
 

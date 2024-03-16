@@ -9,6 +9,62 @@
  	transform: rotate(90deg);
  }
 
+ .clear {
+ 	clear: both;
+ }
+
+ /* tamaños */
+ .small {
+ 	font-size: .8em;
+ }
+
+ i.small {
+ 	color: #e28743;
+ 	margin-right: .2em;
+ }
+
+ span.medium-italic {
+ 	font-size: .9em;
+ 	display: block;
+ 	margin: 0 0 .2em 1em;
+ 	width: 80%;
+ 	font-style: italic;
+ }
+
+ /* imaxes */
+
+ .img-flota-right {
+ 	float: right;
+
+ 	border-radius: .5em !important;
+ }
+
+ .img-flota-left {
+ 	float: right;
+ 	border-radius: .5em !important;
+ }
+
+ .img-xsmall {
+ 	width: 5%;
+ }
+
+ .img-small {
+ 	width: 15%;
+ }
+
+ .img-shadow {
+ 	filter: drop-shadow(3px 3px 3px #7C858E80);
+
+ }
+
+ .img-zoom:hover {
+ 	-webkit-transform: scale(1.8);
+ 	-moz-transform: scale(1.8);
+ 	-o-transform: scale(1.8);
+ 	transform: scale(1.8);
+
+ }
+
  /* LOGO */
  .site-logo-2 > img {
  	float: left;
@@ -38,8 +94,50 @@
  	font-size: 6rem;
  	font-family: 'Arial Black';
  	letter-spacing: 10px;
- 	font-size: 10rem;
- 	background: url("../../../imaxes/img_dodro/RUTA_BRANHAS_2.jpg");
+ 	font-size: 8rem;
+ 	background: url("../../../imaxes/img_dodro/RUTA_RANCA_VELA_11.jpg");
+ 	background-size: contain;
+ 	background-clip: text;
+ 	color: transparent;
+ 	text-fill-color: transparent;
+ 	-webkit-text-fill-color: transparent;
+ 	-webkit-background-clip: text;
+ 	background-clip: text;
+ 	margin: 0 auto;
+ }
+
+ .img-inside_rois {
+ 	position: absolute;
+ 	top: 0%;
+ 	left: 17%;
+ 	/* 	transform: translate(-50%, -50%);*/
+ 	text-transform: uppercase;
+ 	font-size: 6rem;
+ 	font-family: 'Arial Black';
+ 	letter-spacing: 10px;
+ 	font-size: 8rem;
+ 	background: url("../../../imaxes/img_rois/rio.jpg");
+ 	background-size: contain;
+ 	background-clip: text;
+ 	color: transparent;
+ 	text-fill-color: transparent;
+ 	-webkit-text-fill-color: transparent;
+ 	-webkit-background-clip: text;
+ 	background-clip: text;
+ 	margin: 0 auto;
+ }
+
+ .img-inside_padron {
+ 	position: absolute;
+ 	top: 0%;
+ 	left: 17%;
+ 	/* 	transform: translate(-50%, -50%);*/
+ 	text-transform: uppercase;
+ 	font-size: 6rem;
+ 	font-family: 'Arial Black';
+ 	letter-spacing: 10px;
+ 	font-size: 8rem;
+ 	background: url("../../../imaxes/img_padron/xardin2.jpg");
  	background-size: contain;
  	background-clip: text;
  	color: transparent;
@@ -51,14 +149,16 @@
  }
 
 
-
-
-
-
- /* tamaños */
- .small {
- 	font-size: .8em;
+ /* pestañas para info concelo e parroquias */
+ .nav-tabs li {
+ 	min-width: 15%;
  }
+
+ .nav-tabs li a:hover {
+ 	background: #e28743;
+ 	color: white;
+ }
+
 
  /* data-title */
 
@@ -79,21 +179,23 @@
 
  *[data-title]:after {
  	content: attr(data-title);
- 	background: #7C858E;
- 	color: #fff;
+ 	background: #e28743BF;
+ 	color: #3e4d5c;
+
  	font-weight: 500;
- 	font-size: 1em;
+ 	font-size: .8em;
  	/* 	white-space: nowrap;*/
- 	box-shadow: 1px 1px 3px #ccc;
+ 	box-shadow: 1px 1px 3px #7C858E;
  	border: 1px solid #ccc;
  	z-index: 99999;
  	visibility: hidden;
- 	border-radius: 6px;
+ 	border-radius: .5em;
  	position: absolute;
  	top: 0;
- 	right: 1%;
- 	padding: .1em;
+ 	right: auto;
+ 	padding: .2em;
  	text-align: center;
+ 	width: 15em;
  	/*	text-transform: lowercase;*/
  }
 
@@ -268,6 +370,14 @@
  	width: 100%;
  	height: 75vh;
 
+ }
+
+ #gmap_div {
+ 	height: 90vh !important;
+ 	width: 80vw !important;
+ 	text-align: center;
+ 	margin: 5em;
+ 	border: 2px solid blue;
  }
 
  /******** estilo  mapas *********/
