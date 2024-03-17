@@ -54,15 +54,26 @@
 
  .img-shadow {
  	filter: drop-shadow(3px 3px 3px #7C858E80);
+ }
+
+ .img-zoom {
+ 	z-index: 999999 !important;
 
  }
 
  .img-zoom:hover {
- 	-webkit-transform: scale(1.8);
- 	-moz-transform: scale(1.8);
- 	-o-transform: scale(1.8);
- 	transform: scale(1.8);
 
+ 	transform: scale(1.5);
+ 	-ms-transform: scale(1.5);
+ 	/* IE 9 */
+ 	-moz-transform: scale(1.5);
+ 	/* Firefox */
+ 	-webkit-transform: scale(1.5);
+ 	/* Safari and Chrome */
+ 	-o-transform: scale(1.5);
+ 	/* Opera */
+ 	padding: 1em;
+ 	z-index: 999999 !important;
  }
 
  /* LOGO */
@@ -80,8 +91,16 @@
  	filter: grayscale(50%);
  }
 
- /* Concello ACTIVO */
+ /*fontes */
+ .negrita-xl {
+ 	font-weight: bolder;
+ 	font-size: 1em;
+ }
 
+ .subrayado {
+ 	padding: .1em;
+ 	border-bottom: 1px dashed #e28743;
+ }
 
  /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');*/
 
@@ -162,26 +181,25 @@
 
  /* data-title */
 
- *[data-title] {
+ [data-title] {
  	position: relative;
  }
 
- *data-title]:after {
+ data-title]:after {
  	text-transform: none;
  	font-size: 1em;
  }
 
- *[data-title]:hover:after {
+ [data-title]:hover:after {
  	opacity: 1;
  	transition: all 0.1s ease 0.5s;
  	visibility: visible;
  }
 
- *[data-title]:after {
+ [data-title]:after {
  	content: attr(data-title);
- 	background: #e28743BF;
+ 	background: #ccc;
  	color: #3e4d5c;
-
  	font-weight: 500;
  	font-size: .8em;
  	/* 	white-space: nowrap;*/
@@ -407,4 +425,60 @@
  .galeria-container div {
  	width: 22%;
  	height: auto;
+ }
+
+ /********  pop-up  MODAL *********/
+ .modal {
+ 	align-items: center;
+ 	display: flex;
+ 	justify-content: center;
+ 	position: absolute;
+ 	top: 0;
+ 	bottom: 0;
+ 	left: 0%;
+ 	right: 0;
+ 	width: auto;
+ 	height: 50%;
+ 	background: #e2874380;
+
+ 	visibility: hidden;
+ 	opacity: 0;
+
+ 	border-radius: 2em;
+ 	transition: all 0.4s;
+ 	transition: ease-out 0.4s;
+ }
+
+ .modal p {
+ 	font-size: 1em;
+ 	align-items: center;
+ 	position: absolute;
+ 	background: white;
+ 	width: 90%;
+ 	height: auto;
+ 	padding: 1em 2em;
+ 	border-radius: 2em;
+ }
+
+ .modal:target {
+ 	visibility: visible;
+ 	opacity: 1;
+ }
+
+ .modal .box-close {
+ 	position: absolute;
+ 	top: 0;
+ 	right: 0;
+ 	text-decoration: none;
+ 	font-size: 1.5em;
+ 	font-weight: bold;
+ 	padding: .2em;
+ 	background: #fff;
+ 	color: #e28743;
+ }
+
+ .modal .box-close:hover {
+
+ 	background: #e28743;
+ 	color: #fff;
  }

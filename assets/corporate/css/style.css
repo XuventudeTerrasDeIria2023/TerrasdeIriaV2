@@ -2994,6 +2994,8 @@ Demo Utils
 	margin-right: 17px;
 }
 
+.blog-sidebar {}
+
 .blog-posts .more,
 .blog-sidebar .more {
 	color: #e28743;
@@ -3014,6 +3016,10 @@ Demo Utils
 
 .recent-news h3 a {
 	color: #e28743;
+}
+
+.recent-news h3 a:hover {
+	color: #3e4d5c;
 }
 
 .recent-news-inner {
